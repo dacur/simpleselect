@@ -1,0 +1,13 @@
+%h1 Showing all the Awesomeness
+
+%table
+	%tr.headers
+		%th Name
+		%th Why Awesome
+		%th Is Awesome (T/F)
+	#showWhatever
+		- @awesomes.each do |i|
+			%tr
+				%td= i.name
+				%td= i.whyAwesome
+				%td= i.isAwesome
